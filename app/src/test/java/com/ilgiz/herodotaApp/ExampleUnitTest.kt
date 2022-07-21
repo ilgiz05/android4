@@ -1,4 +1,4 @@
-package com.example.lesson22kotlin2
+package com.ilgiz.herodotaApp
 
 import org.junit.Test
 

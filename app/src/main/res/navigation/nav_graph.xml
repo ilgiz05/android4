@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/heroFragment">
+
+    <fragment
+        android:id="@+id/heroFragment"
+        android:name="com.ilgiz.herodotaApp.ui.fragments.hero.HeroFragment"
+        android:label="fragment_heroes"
+        tools:layout="@layout/fragment_hero">
+
+        <action
+            android:id="@+id/action_heroesFragment_to_heroesDetailFragment2"
+            app:destination="@id/heroesDetailFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/heroesDetailFragment"
+        android:name="com.ilgiz.herodotaApp.ui.fragments.detail.HeroDetailFragment"
+        android:label="fragment_heroes_detail"
+        tools:layout="@layout/fragment_hero_detail">
+        <argument
+            android:name="position"
+            app:argType="integer" />
+
+    </fragment>
+
+</navigation>
